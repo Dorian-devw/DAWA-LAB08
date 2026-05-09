@@ -1,0 +1,21 @@
+<%- include('_header', { title: 'Admin Dashboard' }) %>
+
+<div class="retro-os-window">
+  <header class="retro-os-caption">ADMIN.BASH — Usuarios</header>
+  <div class="retro-os-client retro-os-client--flush-top" style="overflow-x:auto">
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Nombre</th>
+          <th>Roles</th>
+          <th>Registrado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="usersTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('_footer') %>

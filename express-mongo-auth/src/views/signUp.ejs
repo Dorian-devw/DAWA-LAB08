@@ -1,0 +1,44 @@
+<%- include('_header', { title: 'Sign Up' }) %>
+
+<div class="row">
+  <div class="col s12 m10 l8 offset-m1 offset-l2">
+    <div class="retro-os-window">
+      <header class="retro-os-caption">REGISTRO.EXE</header>
+      <div class="retro-os-client">
+        <form id="signUpForm">
+          <div class="row" style="margin-bottom:0">
+            <div class="input-field col s6">
+              <input id="name" type="text" required>
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="lastName" type="text" required>
+              <label for="lastName">Last Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="phoneNumber" type="text" required>
+              <label for="phoneNumber">Phone</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="birthdate" type="date" required>
+              <label for="birthdate">Birthdate</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="email" type="email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="col s12" style="margin-top:8px">
+              <button class="btn waves-effect waves-light" type="submit">Registrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('_footer') %>

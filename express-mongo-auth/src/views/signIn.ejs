@@ -1,0 +1,28 @@
+<%- include('_header', { title: 'Sign In' }) %>
+
+<div class="row">
+  <div class="col s12 m10 l8 offset-m1 offset-l2">
+    <div class="retro-os-window retro-os-window--narrow">
+      <header class="retro-os-caption">ACCESO.EXE</header>
+      <div class="retro-os-client">
+        <form id="signInForm">
+          <div class="row" style="margin-bottom:0">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="col s12" style="margin-top:8px">
+              <button class="btn waves-effect waves-light" type="submit">OK</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('_footer') %>

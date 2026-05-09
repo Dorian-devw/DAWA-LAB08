@@ -1,0 +1,39 @@
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="retro-taskbar" aria-label="Barra de tareas">
+    <button type="button" class="retro-taskbar-start" id="retroTaskbarStart" aria-label="Inicio">
+      <img src="/images/start-button.png" alt="" decoding="async">
+    </button>
+    <div class="retro-taskbar-tasks">
+      <span class="retro-taskbar-task retro-taskbar-task--active">APP.EXE</span>
+    </div>
+    <div class="retro-taskbar-tray">
+      <span class="retro-taskbar-hint">Retro-OS</span>
+      <span class="retro-taskbar-clock" id="retroTaskbarClock"></span>
+    </div>
+  </aside>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/profile.js"></script>
+  <script>
+    (function () {
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function tick() {
+        var el = document.getElementById('retroTaskbarClock');
+        if (!el) return;
+        var d = new Date();
+        el.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes());
+      }
+      tick();
+      setInterval(tick, 1000);
+      var startBtn = document.getElementById('retroTaskbarStart');
+      if (startBtn) startBtn.addEventListener('click', function () {
+        window.location.href = '/';
+      });
+    })();
+  </script>
+</body>
+</html>

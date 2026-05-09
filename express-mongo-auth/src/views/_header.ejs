@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title || 'App' %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="/css/retro-os-ui.css" rel="stylesheet">
+</head>
+<body class="retro-os-theme">
+<div class="retro-desktop-shell">
+  <div class="retro-desktop-window-wrap">
+    <div class="retro-desktop-window" role="application" aria-label="Ventana APP.EXE">
+      <nav class="retro-os-nav">
+        <div class="retro-os-nav-inner container">
+          <a href="/" id="brandLogo" class="retro-os-brand">APP.EXE</a>
+          <ul id="nav-mobile" class="retro-os-menu hide-on-med-and-down">
+            <li id="nav-signin"><a href="/signIn">Sign In</a></li>
+            <li id="nav-signup"><a href="/signUp">Sign Up</a></li>
+            <li id="nav-profile" style="display:none"><a href="/profile">Profile</a></li>
+            <li id="nav-logout" style="display:none"><a href="#" id="logoutBtn">Logout</a></li>
+          </ul>
+          <div class="retro-os-sysbuttons" aria-hidden="true">
+            <span class="retro-os-sysbtn retro-os-sysbtn-min" title=""></span>
+            <span class="retro-os-sysbtn retro-os-sysbtn-max" title=""></span>
+            <span class="retro-os-sysbtn retro-os-sysbtn-close" title=""></span>
+          </div>
+        </div>
+      </nav>
+      <div class="retro-desktop-window-main">
+        <div class="container main-wrap">

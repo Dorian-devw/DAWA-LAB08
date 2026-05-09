@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Build and coverage
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+.cache/
+jspm_packages/
+*.tsbuildinfo
+para node js
+node_modules
+dist
+coverage
+logs
+*.log
+.env
+.DS_Store
