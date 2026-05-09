@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: express-mongo-auth
+    env: node
+    plan: free
+    buildCommand: cd express-mongo-auth && npm ci
+    startCommand: cd express-mongo-auth && npm run start
+    envVars:
+      - key: MONGO_URI
+        fromEnvironment: MONGO_URI
+      - key: JWT_SECRET
+        fromEnvironment: JWT_SECRET
+      - key: SKIP_SEEDS
+        fromEnvironment: SKIP_SEEDS
